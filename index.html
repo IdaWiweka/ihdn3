@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Application</title>
+    <title>Indo Health Data Network</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Python App</div>
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>IHDN</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#data">Data Network</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -23,51 +28,162 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Welcome to Our Python Application</h1>
-                <p>A powerful and efficient solution for your needs</p>
-                <a href="#features" class="cta-button">Learn More</a>
+                <h1>Indo Health Data Network</h1>
+                <p class="subtitle">Connecting Healthcare Data Across Indonesia</p>
+                <p class="description">Empowering healthcare providers with secure, efficient, and integrated data solutions for better patient care.</p>
+                <div class="cta-buttons">
+                    <a href="#services" class="cta-button primary">Explore Services</a>
+                    <a href="#contact" class="cta-button secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <i class="fas fa-hospital"></i>
+                    <h3>1000+</h3>
+                    <p>Healthcare Facilities</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-database"></i>
+                    <h3>5M+</h3>
+                    <p>Health Records</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>10M+</h3>
+                    <p>Patients Served</p>
+                </div>
             </div>
         </section>
 
-        <section id="features" class="features">
-            <h2>Key Features</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <i class="fas fa-bolt"></i>
-                    <h3>Fast Performance</h3>
-                    <p>Optimized for speed and efficiency</p>
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Data Integration</h3>
+                    <p>Seamless integration of healthcare data across multiple facilities and systems</p>
                 </div>
-                <div class="feature-card">
+                <div class="service-card">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Secure</h3>
-                    <p>Built with security in mind</p>
+                    <h3>Secure Storage</h3>
+                    <p>HIPAA-compliant data storage with advanced encryption and security measures</p>
                 </div>
-                <div class="feature-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Easy to Use</h3>
-                    <p>Simple and intuitive interface</p>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Analytics</h3>
+                    <p>Advanced analytics and reporting tools for healthcare insights</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Access</h3>
+                    <p>Secure mobile access to patient data for healthcare providers</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="data" class="data-network">
+            <h2>Data Network Coverage</h2>
+            <div class="network-map">
+                <img src="https://via.placeholder.com/800x400" alt="Indonesia Map with Network Coverage" class="map-image">
+                <div class="coverage-stats">
+                    <div class="coverage-item">
+                        <h4>Provinces Covered</h4>
+                        <p>34/34</p>
+                    </div>
+                    <div class="coverage-item">
+                        <h4>Major Cities</h4>
+                        <p>100+</p>
+                    </div>
+                    <div class="coverage-item">
+                        <h4>Rural Areas</h4>
+                        <p>500+</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="about" class="about">
-            <h2>About</h2>
-            <p>This application is built using Python and modern web technologies. It provides a robust solution for various needs while maintaining simplicity and efficiency.</p>
+            <h2>About IHDN</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>The Indo Health Data Network (IHDN) is Indonesia's leading healthcare data integration platform. We connect healthcare providers, researchers, and policymakers through secure and efficient data sharing solutions.</p>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check"></i> Nationwide Coverage</li>
+                        <li><i class="fas fa-check"></i> Real-time Data Access</li>
+                        <li><i class="fas fa-check"></i> HIPAA Compliant</li>
+                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="contact">
             <h2>Contact Us</h2>
-            <form id="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+            <div class="contact-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Organization Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Contact Person" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Jakarta, Indonesia</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+62 21 1234 5678</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>contact@ihdn.id</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Python Application. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>IHDN</h3>
+                <p>Connecting healthcare data across Indonesia for better patient care.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#data">Data Network</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Indo Health Data Network. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
